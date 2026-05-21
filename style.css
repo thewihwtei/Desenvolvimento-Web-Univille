@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação HTML e CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="container">
+
+    <section class="slide" id="slide1">
+
+        <div class="slide-numero">
+        1 / 15
+        </div>
+
+        <div class="texto">
+            <h1>HTML + CSS</h1>
+            <h2>Conceitos Avançados de Desenvolvimento Web</h2>
+            <br>
+            <h3>Equipe:</h3>
+            <p>Gustavo Kontze</p>
+            <p>Henrique White</p>
+            <p>João Carvalho</p>
+            <p>Kauan Ávila</p>
+            <p>Kauany Zapelini</p>
+            <p>Nicolas Santana</p>
+        </div>
+
+        <div class="codigo">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; Projeto Desenvolvimento Web &lt;/title&gt;
+&lt;/head&gt;</pre>
+        </div>
+
+        <div class="navegacao">
+            <a href="#slide2">Próximo →</a>
+        </div>
+
+    </section>
+
+    <section class="slide" id="slide2">
+
+        <div class="slide-numero">
+        2 / 15
+        </div>
+
+        <div class="texto">
+            <h1>Objetivo</h1>
+            <h2>Este projeto foi desenvolvido para aplicar conceitos avançados de HTML e CSS em uma aplicação real, utilizando boas práticas de desenvolvimento web.</h2>
+            <br>
+            <ul>
+                <li>Aplicar HTML semântico</li>
+                <li>Melhorar acessibilidade</li>
+                <li>Utilizar Flexbox e Grid</li>
+                <li>Desenvolver de forma responsiva</li>
+                <li>Aplicar Mobile First</li>
+                <li>Criar animações com CSS</li>
+            </ul>
+        </div>
+
+        <div class="codigo">
+<pre>Projeto desenvolvido
+pela equipe utilizando
+HTML + CSS.</pre>
+        </div>
+
+        <div class="navegacao">
+            <a href="#slide1">← Voltar</a>
+            <a href="#slide3">Próximo →</a>
+        </div>
+
+    </section>
+
+    <section class="slide" id="slide3">
+
+        <div class="slide-numero">
+        3 / 15
+        </div>
+
+        <div class="texto">
+            <h1>HTML Semântico</h1>
+            <h2>HTML semântico consiste em utilizar elementos que possuem significado para descrever a estrutura da página.</h2>
+            <h2>Em vez de utilizar várias &lt;div&gt;, utilizamos tags específicas que descrevem a função de cada parte do site.</h2>
+            <br>
+            <h3>Benefícios</h3>
+            <ul>
+                <li>Código mais organizado</li>
+                <li>Melhor manutenção</li>
+                <li>Melhor SEO</li>
+                <li>Melhor acessibilidade</li>
+            </ul>
+        </div>
+
+        <div class="codigo">
+<pre>&lt;header&gt;
+&lt;nav&gt;
+&lt;main&gt;
+&lt;section&gt;
+&lt;footer&gt;</pre>
+        </div>
+
+        <div class="navegacao">
+            <a href="#slide2">← Voltar</a>
+            <a href="#slide4">Próximo →</a>
+        </div>
+
+    </section>
+
+    <section class="slide" id="slide4">
+
+        <div class="slide-numero">
+        4 / 15
+        </div>
+
+        <div class="texto">
+            <h1>Principais Tags Semânticas</h1>
+            <br>
+            <h2>Algumas das principais tags utilizadas são:</h2>
+            <ul>
+                <li>&lt;header&gt; -> Cabeçalho</li>
+                <li>&lt;nav&gt; -> Menu de Navegação</li>
+                <li>&lt;main&gt; -> Conteúdo Principal</li>
+                <li>&lt;section&gt; -> Seção</li>
+                <li>&lt;article&gt; -> Artigo</li>
+                <li>&lt;aside&gt; -> Conteúdo Adicional</li>
+                <li>&lt;footer&gt; -> Rodapé</li>
+            </ul>
+            <br>
+            <h2>Essas tags tornam o código mais organizado e ajudam leitores de tela e outras tecnologias assistivas a entenderem melhor a estrutura do site.</h2>
+        </div>
+
+        <div class="codigo">
+<pre>&lt;header&gt;
+    Logo da empresa
+&lt;/header&gt;
+
+&lt;nav&gt;
+    Início | Produtos | Contato
+&lt;/nav&gt;
+
+&lt;main&gt;
+
+    &lt;section&gt;
+        Serviços
+    &lt;/section&gt;
+
+    &lt;article&gt;
+        Notícia publicada
+    &lt;/article&gt;
+
+    &lt;aside&gt;
+        Sugestões
+    &lt;/aside&gt;
+
+&lt;/main&gt;
+
+&lt;footer&gt;
+    © 2026 Empresa
+&lt;/footer&gt;</pre>
+        </div>
+
+        <div class="navegacao">
+            <a href="#slide3">← Voltar</a>
+            <a href="#slide5">Próximo →</a>
+        </div>
+
+    </section>
+
+    <section class="slide" id="slide5">
+
+        <div class="slide-numero">
+        5 / 15
+        </div>
+
+        <div class="texto">
+            <h1>Acessibilidade</h1>
+            <h2>A acessibilidade busca tornar sites e aplicações utilizáveis pelo maior número possível de pessoas, incluindo usuários com limitações visuais, auditivas ou motoras.</h2>
+            <br>
+            <h3>Boas práticas:</h3>
+            <ul>
+                <li>Textos alternativos</li>
+                <li>Contraste adequado</li>
+                <li>Títulos organizados</li>
+                <li>Navegação por teclado</li>
+                <li>Formulários identificados</li>
+            </ul>
+        </div>
+
+        <div class="codigo">
+<pre>&lt;img src="imagem.jpg" 
+alt="Descrição da imagem"&gt;</pre>
+        </div>
+
+        <div class="navegacao">
+            <a href="#slide4">← Voltar</a>
+            <a href="#slide6">Próximo →</a>
+        </div>
+
+    </section>
+
+    <section class="slide" id="slide6">
+
+        <div class="slide-numero">
+        6 / 15
+        </div>
+
+        <div class="texto">
+            <h1>Navegação por teclado</h1>
+            <h2>Nem todos os usuários utilizam mouse.</h2>
+            <br>
+            <h3>A navegação por teclado permite interação usando:</h3>
+            <ul>
+                <li>TAB</li>
+                <li>Setas</li>
+                <li>ENTER</li>
+                <li>ESPAÇO</li>
+            </ul>
+            <br>
+            <h3>Benefícios:</h3>
+            <ul>
+                <li>Maior acessibilidade</li>
+                <li>Melhor experiência do usuário</li>
+            </ul>
+        </div>
+
+        <div class="codigo">
+<pre>&lt;button tabindex="0"&gt;
+Entrar
+&lt;/button&gt;</pre>
+        </div>
+
+        <div class="navegacao">
+            <a href="#slide5">← Voltar</a>
+            <a href="#slide7">Próximo →</a>
+        </div>
+
+    </section>
+
+    <section class="slide" id="slide7">
+
+        <div class="slide-numero">
+        7 / 15
+        </div>
+
+        <div class="texto">
+            <h1>Medidas Fixas x Relativas</h1>
+            <h2>As medidas relativas permitem que a interface se adapte a diferentes dispositivos.</h2>
+            <br>
+            <h3>Medidas Fixas:</h3>
+            <ul>
+                <li>px -> Pixels</li>
+                <li>cm -> Centímetros</li>
+            </ul>
+            <br>
+            <h3>Medidas Relativas:</h3>
+            <ul>
+                <li>% -> Porcentagem</li>
+                <li>em -> Unidade baseada no tamanho da fonte</li>
+                <li>rem -> Unidade baseada no tamanho da fonte do elemento raiz</li>
+                <li>vw -> Unidade baseada na largura da viewport</li>
+                <li>vh -> Unidade baseada na altura da viewport</li>
+            </ul>
+        </div>
+
+        <div class="codigo">
+<pre>.container{
+    width:80%;
+    font-size:1.5rem;
+}</pre>
+        </div>
+
+        <div class="navegacao">
+            <a href="#slide6">← Voltar</a>
+            <a href="#slide8">Próximo →</a>
+        </div>
+
+    </section>
+
+    <section class="slide" id="slide8">
+
+        <div class="slide-numero">
+        8 / 15
+        </div>
+
+        <div class="texto">
+            <h1>Responsividade</h1>
+            <h2>Responsividade é a capacidade de um site adaptar seu layout a diferentes tamanhos de tela.</h2>
+            <br>
+            <h3>Objetivos:</h3>
+            <ul>
+                <li>Melhorar experiência do usuário</li>
+                <li>Evitar barras de rolagem horizontais</li>
+                <li>Permitir acesso em celulares, tablets e computadores</li>
+            </ul>
+        </div>
+
+        <div class="codigo">
+<pre>@media(max-width:768px){
+    .container{
+        flex-direction:column;
+    }
+}</pre>
+        </div>
+
+        <div class="navegacao">
+            <a href="#slide7">← Voltar</a>
+            <a href="#slide9">Próximo →</a>
+        </div>
+
+    </section>
+
+    <section class="slide" id="slide9">
+
+        <div class="slide-numero">
+        9 / 15
+        </div>
+
+        <div class="texto">
+            <h1>Flexbox</h1>
+            <h2>Flexbox é uma técnica de layout unidimensional que permite criar designs mais flexíveis e responsivos.</h2>
+            <br>
+            <h3>Ele organiza elementos em:</h3>
+            <ul>
+                <li>Linhas</li>
+                <li>Colunas</li>
+            </ul>
+            <br>
+            <h3>Muito utilizado em:</h3>
+            <ul>
+                <li>Menus</li>
+                <li>Cards</li>
+                <li>Alinhamentos</li>
+            </ul>
+        </div>
+
+        <div class="codigo">
+<pre>.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}</pre>
+        </div>
+
+        <div class="navegacao">
+            <a href="#slide8">← Voltar</a>
+            <a href="#slide10">Próximo →</a>
+        </div>
+
+    </section>
+
+    <section class="slide" id="slide10">
+
+        <div class="slide-numero">
+        10 / 15
+        </div>
+
+        <div class="texto">
+            <h1>Grid</h1>
+            <h2>Grid é uma técnica de layout bidimensional que permite criar designs mais flexíveis e responsivos.</h2>
+            <br>
+            <h3>Permite trabalhar simultaneamente com:</h3>
+            <ul>
+                <li>Linhas</li>
+                <li>Colunas</li>
+            </ul>
+            <br>
+            <h3>Muito utilizado em:</h3>
+            <ul>
+                <li>Layouts Completos</li>
+                <li>Galerias</li>
+                <li>Dashboards</li>
+            </ul>
+        </div>
+
+        <div class="codigo">
+<pre>.grid{
+    display:grid;
+    grid-template-columns:
+    1fr 1fr 1fr;
+}</pre>
+            <div class="grid">
+                <div class="item-grid">1</div>
+                <div class="item-grid">2</div>
+                <div class="item-grid">3</div>
+                <div class="item-grid">4</div>
+                <div class="item-grid">5</div>
+                <div class="item-grid">6</div>
+            </div>
+        </div>
+
+        <div class="navegacao">
+            <a href="#slide9">← Voltar</a>
+            <a href="#slide11">Próximo →</a>
+        </div>
+
+    </section>
+
+    <section class="slide" id="slide11">
+
+        <div class="slide-numero">
+        11 / 15
+        </div>
+
+        <div class="texto">
+            <h1>Flexbox x Grid</h1>
+            <br>
+            <h3>Flexbox:</h3>
+            <ul>
+                <li>Uma dimensão</li>
+                <li>Componentes Menores</li>
+                <li>Alinhamento Simples</li>
+            </ul>
+            <br>
+            <h3>Grid:</h3>
+            <ul>
+                <li>Duas dimensões</li>
+                <li>Layouts Complexos</li>
+                <li>Controle Preciso</li>
+            </ul>
+        </div>
+
+        <div class="codigo">
+<pre>.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:
+    1fr 1fr 1fr;
+}</pre>
+        </div>
+
+        <div class="navegacao">
+            <a href="#slide10">← Voltar</a>
+            <a href="#slide12">Próximo →</a>
+        </div>
+
+    </section>
+
+    <section class="slide" id="slide12">
+
+        <div class="slide-numero">
+        12 / 15
+        </div>
+
+        <div class="texto">
+            <h1>Mobile First</h1>
+            <h2>Mobile First é uma estratégia onde o desenvolvimento começa pela menor tela primeiro.</h2>
+            <br>
+            <h3>Vantagens:</h3>
+            <ul>
+                <li>Melhor Desempenho</li>
+                <li>Foco no Conteúdo Principal</li>
+                <li>Melhor Experiência Mobile</li>
+            </ul>
+        </div>
+
+        <div class="codigo">
+<pre>.card{
+    width:100%;
+    }
+
+    @media(min-width:768px){
+        .card{
+        width:50%;
+    }
+}</pre>
+        </div>
+
+        <div class="navegacao">
+            <a href="#slide11">← Voltar</a>
+            <a href="#slide13">Próximo →</a>
+        </div>
+
+    </section>
+
+    <section class="slide" id="slide13">
+
+        <div class="slide-numero">
+        13 / 15
+        </div>
+
+        <div class="texto">
+            <h1>Animações CSS</h1>
+            <h2>As animações permitem criar efeitos visuais que tornam a interface mais dinâmica.</h2>
+            <br>
+            <h3>Podem ser utilizadas para:</h3>
+            <ul>
+                <li>Transições</li>
+                <li>Menus</li>
+                <li>Botões</li>
+                <li>Efeitos de Entrada</li>
+            </ul>
+        </div>
+
+        <div class="codigo">
+<pre>@keyframes aparecer{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}</pre>
+        </div>
+
+        <div class="navegacao">
+            <a href="#slide12">← Voltar</a>
+            <a href="#slide14">Próximo →</a>
+        </div>
+
+    </section>
+
+    <section class="slide" id="slide14">
+
+        <div class="slide-numero">
+        14 / 15
+        </div>
+
+        <div class="texto">
+            <h1>Conclusão</h1>
+            <h2>HTML e CSS juntos permitem criar interfaces modernas, organizadas, acessíveis e adaptáveis para diferentes dispositivos.</h2>
+            <br>
+            <h3>No projeto aplicamos:</h3>
+            <ul>
+                <li>HTML semântico</li>
+                <li>Acessibilidade</li>
+                <li>Flexbox</li>
+                <li>Grid</li>
+                <li>Responsividade</li>
+                <li>Mobile First</li>
+                <li>Animações CSS</li>
+            </ul>
+            <br>
+            <h2>Esses conceitos são fundamentais para o desenvolvimento web moderno.</h2>
+        </div>
+
+        <div class="navegacao">
+            <a href="#slide13">← Voltar</a>
+            <a href="#slide15">Próximo →</a>
+        </div>
+
+    </section>
+    
+    <section class="slide" id="slide15">
+
+        <div class="slide-numero">
+        15 / 15
+        </div>
+
+        <div class="texto">
+            <h1>Obrigado!</h1>
+            <h2>Agradecemos pela atenção.</h2>
+            <br>
+            <h3>Dúvidas ou perguntas?</h3>
+            <br>
+            <p>HTML + CSS • Desenvolvimento Web</p>
+        </div>
+
+        <div class="codigo">
+<pre>&lt;body&gt;
+    Obrigado pela atenção!
+    Esperamos que tenham gostado.
+&lt;/body&gt;</pre>
+        </div>
+
+        <div class="navegacao">
+            <a href="#slide14">← Voltar</a>
+        </div>
+    </section>
+
+</main>
+
+</body>
+
+</html>
