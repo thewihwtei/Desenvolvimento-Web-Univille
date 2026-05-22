@@ -1,0 +1,291 @@
+/* ==================================================
+   RESET E CONFIGURAÇÕES GERAIS
+   ================================================== */
+
+*{
+    margin:0; /* Remove margens padrão */
+    padding:0; /* Remove espaçamentos internos */
+    box-sizing:border-box; /* Inclui padding e borda no tamanho */
+}
+
+html{
+    scroll-behavior:smooth; /* Suaviza rolagem entre âncoras */
+}
+
+body{
+    font-family:Arial, sans-serif; /* Define fonte padrão */
+    overflow-x:hidden; /* Impede rolagem horizontal */
+    background:
+    linear-gradient(
+        135deg, /* Inclinação do gradiente */
+        #0f172a, /* Cor inicial */
+        #1e293b, /* Cor intermediária */
+        #334155 /* Cor final */
+    );
+}
+
+
+/* ==================================================
+   CONTAINER PRINCIPAL
+   ================================================== */
+
+.container{
+    display:flex; /* Ativa Flexbox */
+    width:100vw; /* Largura total da tela */
+    height:100vh; /* Altura total da tela */
+    overflow-x:auto; /* Permite rolagem horizontal */
+
+    scroll-snap-type:x mandatory; /* Encaixa slides automaticamente */
+    scroll-behavior:smooth; /* Suaviza rolagem */
+}
+
+.container::-webkit-scrollbar{
+    display:none; /* Esconde barra de rolagem */
+}
+
+
+/* ==================================================
+   ESTILO DOS SLIDES
+   ================================================== */
+
+.slide{
+    position:relative; /* Permite posicionar elementos internos */
+
+    min-width:100vw; /* Cada slide ocupa tela inteira */
+    height:100vh; /* Altura total da tela */
+    padding:60px; /* Espaço interno */
+
+    display:flex; /* Ativa Flexbox */
+    justify-content:space-between; /* Separa elementos */
+    align-items:center; /* Centraliza verticalmente */
+    gap:40px; /* Espaço entre elementos */
+
+    color:white; /* Cor do texto */
+
+    scroll-snap-align:start; /* Define ponto de encaixe */
+
+    opacity:1; /* Opacidade inicial */
+    transform:scale(1); /* Tamanho padrão */
+    transition:.4s ease; /* Suaviza transições */
+}
+
+.slide::before{
+    content:""; /* Cria elemento vazio */
+    position:absolute; /* Posicionamento absoluto */
+    inset:0; /* Ocupa todo espaço */
+
+    background:
+    radial-gradient(
+        circle at top left, /* Gradiente circular */
+        rgba(56,189,248,.08), /* Cor com transparência */
+        transparent 50% /* Dissolve efeito */
+    );
+
+    pointer-events:none; /* Ignora cliques */
+}
+
+.slide-numero{
+    position:absolute; /* Posiciona livremente */
+    top:20px; /* Distância superior */
+    right:30px; /* Distância direita */
+
+    font-size:14px; /* Tamanho da fonte */
+    opacity:.7; /* Transparência */
+}
+
+/* ==================================================
+   ÁREA DE TEXTO
+   ================================================== */
+
+.texto{
+    flex:1.5; /* Ocupa 1,5 partes do espaço disponível */
+}
+
+.texto h1{
+    font-size:3rem; /* Tamanho grande do título */
+    margin-bottom:30px; /* Espaço abaixo do título */
+}
+
+.texto h2{
+    font-size:1.3rem; /* Tamanho do subtítulo */
+    font-weight:normal; /* Remove negrito */
+    line-height:1.6; /* Espaçamento entre linhas */
+    margin-bottom:15px; /* Espaço abaixo */
+    color:#d1d5db; /* Cor cinza clara */
+}
+
+.texto h3{
+    margin:15px 0; /* Espaço em cima e embaixo */
+    color:#38bdf8; /* Cor azul */
+}
+
+.texto p,
+.texto li{
+    font-size:1.2rem; /* Tamanho do texto */
+    line-height:1.8; /* Espaçamento entre linhas */
+}
+
+
+/* ==================================================
+   ÁREA DE CÓDIGO
+   ================================================== */
+
+.codigo{
+    flex:1.5; /* Ocupa 1,5 partes do espaço */
+}
+
+.codigo pre{
+    padding:25px; /* Espaçamento interno */
+
+    background:#111827; /* Cor de fundo escura */
+    color:#38bdf8; /* Cor do texto */
+
+    border-radius:20px; /* Arredonda cantos */
+    border-left:5px solid #38bdf8; /* Linha azul lateral */
+
+    overflow:auto; /* Adiciona rolagem se necessário */
+
+    font-family:Consolas, monospace; /* Fonte de código */
+    font-size:1.05rem; /* Tamanho da fonte */
+    line-height:1.7; /* Espaço entre linhas */
+    white-space:pre-wrap; /* Mantém quebras de linha */
+
+    box-shadow:
+    0 0 25px rgba(0,0,0,.4); /* Sombra ao redor */
+}
+
+
+/* ==================================================
+   GRID EXEMPLO
+   ================================================== */
+
+.grid{
+    display:grid; /* Ativa CSS Grid */
+    grid-template-columns:repeat(3,1fr); /* Cria 3 colunas iguais */
+
+    gap:10px; /* Espaço entre itens */
+    margin-top:20px; /* Espaço acima */
+}
+
+.item-grid{
+    padding:15px; /* Espaçamento interno */
+
+    background:#111827; /* Fundo escuro */
+    color:white; /* Texto branco */
+
+    border:1px solid #38bdf8; /* Borda azul */
+    border-radius:10px; /* Cantos arredondados */
+
+    text-align:center; /* Centraliza texto */
+    font-weight:bold; /* Texto em negrito */
+}
+
+
+/* ==================================================
+   BOTÕES DE NAVEGAÇÃO
+   ================================================== */
+
+.navegacao{
+    position:absolute; /* Posicionamento livre */
+    bottom:30px; /* Distância inferior */
+    right:30px; /* Distância direita */
+
+    display:flex; /* Ativa Flexbox */
+    gap:10px; /* Espaço entre botões */
+}
+
+.navegacao a{
+    padding:10px 20px; /* Espaçamento interno */
+
+    background:white; /* Fundo branco */
+    color:black; /* Texto preto */
+
+    border-radius:10px; /* Bordas arredondadas */
+
+    text-decoration:none; /* Remove sublinhado */
+    font-weight:bold; /* Texto em negrito */
+
+    transition:.3s; /* Suaviza efeitos */
+}
+
+.navegacao a:hover{
+    transform:translateY(-3px); /* Move botão para cima */
+
+    box-shadow:
+    0 0 15px rgba(255,255,255,.4); /* Adiciona brilho */
+}
+
+.navegacao a:focus{
+    outline:3px solid #38bdf8; /* Borda ao selecionar */
+    outline-offset:4px; /* Distância da borda */
+}
+
+
+/* ==================================================
+   ANIMAÇÕES
+   ================================================== */
+
+@keyframes aparecerEsquerda{
+
+    from{
+        opacity:0; /* Começa invisível */
+        transform:translateX(-50px); /* Inicia à esquerda */
+    }
+
+    to{
+        opacity:1; /* Fica visível */
+        transform:translateX(0); /* Volta posição normal */
+    }
+}
+
+@keyframes aparecerDireita{
+
+    from{
+        opacity:0; /* Começa invisível */
+        transform:translateX(50px); /* Inicia à direita */
+    }
+
+    to{
+        opacity:1; /* Fica visível */
+        transform:translateX(0); /* Volta posição normal */
+    }
+}
+
+.slide:target .texto,
+#slide1 .texto{
+    animation:
+    aparecerEsquerda .8s ease forwards; /* Executa animação */
+}
+
+.slide:target .codigo,
+#slide1 .codigo{
+    animation:
+    aparecerDireita .8s ease forwards; /* Executa animação */
+}
+
+
+/* ==================================================
+   RESPONSIVIDADE (MOBILE FIRST)
+   ================================================== */
+
+@media(max-width:768px){
+
+    .slide{
+        flex-direction:column; /* Organiza verticalmente */
+        justify-content:center; /* Centraliza conteúdo */
+
+        gap:30px; /* Espaço entre elementos */
+        padding:30px; /* Reduz espaçamento */
+
+        overflow-y:auto; /* Permite rolagem vertical */
+    }
+
+    .texto,
+    .codigo{
+        width:100%; /* Ocupa toda largura */
+    }
+
+    .texto h1{
+        font-size:2rem; /* Diminui título */
+    }
+}
